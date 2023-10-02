@@ -1,0 +1,172 @@
+.navbar{
+  .btn{
+    font-size: 12px !important;
+    svg{
+      width: 12px !important;
+    }
+  }
+}
+
+.main{
+  width: 100%;
+  /* background-image: url('../../../assets/bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; */
+  background-color: #fedfa9;
+  padding-bottom: 8rem !important;
+
+.card{
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 15px 2px rgba(black,0.068) ;
+  transition: box-shadow 0.2s ease-out;
+  position: relative;
+  width: 500px;
+  margin: auto;
+  z-index: 3;
+
+  &:hover{
+    cursor: pointer;
+    box-shadow: 0 0 0 4px rgba(black, 0.0688);
+    .x-button{
+      opacity: 1;
+      transition-delay: 0.35s;
+      transform: scale(1);
+    }
+    .checkBtn{
+      opacity: 1;
+      transition-delay: 0.35s;
+      transform: scale(1);
+    }
+  }
+  @media screen and (max-width: 768px){
+    width: 100% !important;
+
+  }
+}
+.card-body{
+  padding: 25px;
+    text-decoration: none;
+    .card-title{
+      font-size: 22px;
+      font-weight: bold;
+      color: #181818;
+    }
+    color: #555;
+}
+.x-button
+{
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  height: 40px;
+  width: 40px;
+  background-color: rgb(238, 212, 212);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.2s ease-out, transform 0.2s ease-out;
+
+  opacity: 0;
+  transform: scale(0.35);
+  &:hover{
+    background-color: rgb(207, 43, 43);
+    svg{
+      color: white !important;
+      width: 80% !important;
+    }
+  }
+  &:active{
+    background-color: darkred;
+    svg{color: rgb(150, 142, 142)}
+  }
+  svg{
+    font-size: 20px;
+    color: red;
+  }
+}
+.addBtn{
+  margin: auto;
+  width: 500px;
+  height: 100px;
+  background: linear-gradient(to right, #12c612, #ef7613)!important;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s ease-out, transform 0.2s ease-out;
+
+  &:hover{
+    background: linear-gradient(to left, #12c612, #ef7613)!important;
+    transform: scale(1.15);
+  }
+  @media screen and (max-width: 768px){
+    width: 100% !important;
+
+  }
+}
+
+}
+.banner {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  background: url(https://static.pexels.com/photos/2232/vegetables-italian-pizza-restaurant.jpg) no-repeat 50% 30%;
+  background-size: 100%;
+  margin-bottom: 20px;
+  animation: background linear 12s alternate 1s infinite;
+
+  &__overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.5);
+  }
+  @media screen and (max-width: 768px) {
+    background-size: cover !important;
+    .banner__hero, .banner__text{
+      font-size: medium;
+    }
+    h1{
+      font-size: 50px !important;
+    }
+  }
+}
+.banner__container {
+  position: relative;
+  transform: translateY(-50%);
+  top: 50%;
+  text-align: center;
+  color: #fff;
+}
+
+.banner__hero {
+  font-weight: 300;
+  font-size: 5rem;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.banner__text {
+  margin: 35px 0;
+  font-size: 2rem;
+  font-style: italic;
+}
+
+@keyframes background {
+  0% {
+    background: url(https://static.pexels.com/photos/2232/vegetables-italian-pizza-restaurant.jpg) no-repeat 50% 30%;
+    background-size: 100%;
+    transition: background 0.5s ease-in-out;
+  }
+  100% {
+    background: url(https://static.pexels.com/photos/2232/vegetables-italian-pizza-restaurant.jpg) no-repeat 50% 60%;
+    background-size: 100%;
+    transition: background 0.5s ease-in-out;
+  }
+}
